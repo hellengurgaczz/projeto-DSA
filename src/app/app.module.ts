@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './ingressos/templates/header/header.component';
-import { FooterComponent } from './ingressos/templates/footer/footer.component';
 import { CadastrarComponent } from './ingressos/templates/cadastrar/cadastrar.component';
 import { ListarComponent } from './ingressos/templates/listar/listar.component';
 import { DeletarComponent } from './ingressos/templates/deletar/deletar.component';
@@ -44,7 +43,6 @@ import { MatInputModule } from '@angular/material/input';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
     CadastrarComponent,
     ListarComponent,
     DeletarComponent,

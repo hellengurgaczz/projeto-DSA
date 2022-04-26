@@ -1,1 +1,24 @@
-<p>deletar works!</p>
+<div class="excluirIngresso">
+    <h1>Excluir ingresso</h1>
+  </div>
+  <form>
+    <mat-card>
+      <mat-card-content>
+        <mat-form-field>
+          <input matInput disabled type="text" placeholder="Evento" 
+                 name="nome" [(ngModel)]="ingresso.evento">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput disabled type="text" placeholder="Descrição" 
+                name="descricao" [(ngModel)]="ingresso.desc">
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button class="btnExcluirIngresso" (click)="deletarIngresso()" 
+                color="warn">CONFIRMAR</button>
+        <button mat-raised-button class="btnExcluirIngresso" 
+                routerLink="/listar">Cancelar</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+  

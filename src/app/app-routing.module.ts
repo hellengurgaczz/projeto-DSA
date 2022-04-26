@@ -9,8 +9,8 @@ const routes: Routes = [
   {path: "", component: ListarComponent},
   {path: "cadastrar", component: CadastrarComponent},
   {path: "listar", component: ListarComponent},
-  {path: "editar", component: EditarComponent},
-  {path: "deletar", component: DeletarComponent}
+  {path: "editar/:id", component: EditarComponent},
+  {path: "deletar/:id", component: DeletarComponent}
 ];
 
 @NgModule({

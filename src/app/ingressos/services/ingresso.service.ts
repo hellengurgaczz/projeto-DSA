@@ -18,6 +18,10 @@ export class  IngressoService {
         return this.http.get<Ingresso[]>(this.URL);
     }
 
+    buscarIngressoPorId(id : number) : Observable<Ingresso>{
+        return this.http.get<Ingresso>(this.URL + "/" + id);
+    }
+
     cadastrarIngresso(ingresso : Ingresso) : Observable<any> {
         console.log(this.URL)
         return this.http.post(this.URL, ingresso);
@@ -27,7 +31,7 @@ export class  IngressoService {
         return this.http.put(this.URL + "/" + id, ingresso);
     }
     
-    excluirIngresso(id : number) : Observable<any> {
+    deletarIngresso(id : number) : Observable<any> {
         return this.http.delete(this.URL + "/" + id);
     }
     
