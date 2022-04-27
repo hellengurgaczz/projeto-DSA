@@ -23,7 +23,7 @@ export class EditarComponent implements OnInit {
 
   salvarIngresso(){
     console.log("--------> Executou o método salvar ingresso");
-    this.service.cadastrarIngresso(this.ingresso).subscribe(() => {
+    this.service.atualizarIngresso(this.ingresso, this.ingresso.id).subscribe(() => {
       this.router.navigate(['/listar']);
     });
   }

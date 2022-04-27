@@ -12,9 +12,9 @@ export class  IngressoService {
 
     constructor(private http: HttpClient) { }
 
-    URL = "http://localhost:4200";
+    URL = "http://localhost:3001/ingresso";
 
-    listarIngressos() : Observable<Ingresso[]>{    
+    listarIngressos() : Observable<Ingresso[]>{
         return this.http.get<Ingresso[]>(this.URL);
     }
 
@@ -23,18 +23,17 @@ export class  IngressoService {
     }
 
     cadastrarIngresso(ingresso : Ingresso) : Observable<any> {
-        console.log(this.URL)
+        console.log(this.URL, ingresso)
         return this.http.post(this.URL, ingresso);
     }
-    
+
     atualizarIngresso(ingresso: Ingresso, id : number) : Observable<any> {
         return this.http.put(this.URL + "/" + id, ingresso);
     }
-    
+
     deletarIngresso(id : number) : Observable<any> {
         return this.http.delete(this.URL + "/" + id);
     }
-    
+
 }
 
-  
