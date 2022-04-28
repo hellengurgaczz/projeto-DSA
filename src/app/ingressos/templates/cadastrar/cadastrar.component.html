@@ -6,7 +6,7 @@
         <mat-card-content>
             <mat-form-field>
                 <label for="evento">Nome do evento: </label>
-                <input matInput type="text" placeholder="Digite o nome do evento" name="evento" [(ngModel)]="ingresso.evento">
+                <input matInput type="text" name="evento" [(ngModel)]="ingresso.evento">
             </mat-form-field>
         </mat-card-content>
         <mat-card-content>
@@ -18,19 +18,19 @@
         <mat-card-content>
             <mat-form-field>
                 <label for="artista">Artista: </label>
-                <input type="text" matInput placeholder="Digite o nome do artista" name="artista" [(ngModel)]="ingresso.artista">
+                <input type="text" matInput name="artista" [(ngModel)]="ingresso.artista">
             </mat-form-field>
         </mat-card-content>
         <mat-card-content>
             <mat-form-field>
                 <label for="valor">Valor do ingresso: </label>
-                <input type="number" matInput class="example-right-align" placeholder="0" [(ngModel)]="ingresso.valor">
+                <input type="number" matInput class="example-right-align" [(ngModel)]="ingresso.valor">
             </mat-form-field>
         </mat-card-content>
         <mat-card-content>
             <mat-form-field>
                 <label for="local">Local do evento: </label>
-                <input type="text" matInput placeholder="Digite o local do evento" name="local" [(ngModel)]="ingresso.local">
+                <input type="text" matInput name="local" [(ngModel)]="ingresso.local">
             </mat-form-field>
         </mat-card-content>
         <mat-card-content>
@@ -38,9 +38,8 @@
         </mat-card-content>
     </mat-card>
     <mat-card-actions>
-        <button mat-raised-button class="btnSalvarIngresso" (click)="salvarIngresso()"
-                color="primary">Salvar</button>
-        <button mat-raised-button class="btnSalvarIngresso"
+        <button mat-raised-button class="btnSalvarIngresso, primary" (click)="salvarIngresso()">Salvar</button>
+        <button mat-raised-button class="btnSalvarIngresso, secundary"
                 routerLink="/listar">Cancelar</button>
       </mat-card-actions>
 </form>
