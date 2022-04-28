@@ -22,7 +22,12 @@
       <td>
         <a routerLink="/editar/{{ ingresso.id }}">Editar</a>
         <a routerLink="/deletar/{{ ingresso.id }}">Excluir</a>
-        <a routerLink="/listar">Comprar</a>
+        <a routerLink="/comprar/{{ ingresso.id }}">Comprar</a>
+      </td>
+      <td>
+        <span class="ingressosDisponiveis" *ngIf="ingresso.numero_ingressos > 10">Ingressos disponíveis</span>
+        <span class="ultimosIngressos" *ngIf="ingresso.numero_ingressos <= 10 && ingresso.numero_ingressos != 0">Últimos ingressos</span>
+        <span class="ingressosIndisponiveis" *ngIf="ingresso.numero_ingressos == 0">Ingressos esgotados</span>
       </td>
     </tr>
   </tbody>

@@ -28,6 +28,4 @@ export class DeletarComponent implements OnInit {
     });
   }
 
-  
-
 }

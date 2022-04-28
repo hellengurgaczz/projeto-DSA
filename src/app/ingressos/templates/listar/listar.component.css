@@ -1,0 +1,13 @@
+.ingressosDisponiveis {
+    background-color: rgb(65, 207, 65);
+    font-weight: bold;
+}
+.ingressosIndisponiveis {
+    background-color: rgb(235, 46, 46);
+    font-weight: bold;
+}
+
+.ultimosIngressos {
+    background-color: yellow;
+    font-weight: bold;
+}
