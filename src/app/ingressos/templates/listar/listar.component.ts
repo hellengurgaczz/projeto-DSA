@@ -10,7 +10,7 @@ import { IngressoService } from '../../services/ingresso.service';
 export class ListarComponent implements OnInit {
 
   ingressos : Ingresso[] = [];
-  colunas: string[] = ['id', 'evento', 'desc', 'artista', 'valor', 'local', 'data'];
+  colunas: string[] = ['id', 'evento', 'desc', 'artista', 'valor', 'local', 'data', 'acoes'];
 
   constructor(private service : IngressoService) { }
 

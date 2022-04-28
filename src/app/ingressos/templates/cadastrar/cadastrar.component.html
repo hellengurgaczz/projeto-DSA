@@ -2,44 +2,34 @@
     <h1>Cadastrar Ingresso</h1>
   </div>
   <form>
-    <mat-card>
-        <mat-card-content>
-            <mat-form-field>
-                <label for="evento">Nome do evento: </label>
-                <input matInput type="text" name="evento" [(ngModel)]="ingresso.evento">
-            </mat-form-field>
-        </mat-card-content>
-        <mat-card-content>
-            <mat-form-field>
-                <label for="desc">Descrição: </label>
-                <textarea matInput [(ngModel)]="ingresso.desc"></textarea>
-            </mat-form-field>
-        </mat-card-content>
-        <mat-card-content>
-            <mat-form-field>
-                <label for="artista">Artista: </label>
-                <input type="text" matInput name="artista" [(ngModel)]="ingresso.artista">
-            </mat-form-field>
-        </mat-card-content>
-        <mat-card-content>
-            <mat-form-field>
-                <label for="valor">Valor do ingresso: </label>
-                <input type="number" matInput class="example-right-align" [(ngModel)]="ingresso.valor">
-            </mat-form-field>
-        </mat-card-content>
-        <mat-card-content>
-            <mat-form-field>
-                <label for="local">Local do evento: </label>
-                <input type="text" matInput name="local" [(ngModel)]="ingresso.local">
-            </mat-form-field>
-        </mat-card-content>
-        <mat-card-content>
+    <div>
+        <form action="POST">
+            <label for="evento">Nome do evento: </label>
+            <input type="text" name="evento" [(ngModel)]="ingresso.evento">
 
-        </mat-card-content>
-    </mat-card>
-    <mat-card-actions>
-        <button mat-raised-button class="btnSalvarIngresso, primary" (click)="salvarIngresso()">Salvar</button>
-        <button mat-raised-button class="btnSalvarIngresso, secundary"
+            <label for="desc">Descrição: </label>
+            <textarea name="desc" [(ngModel)]="ingresso.desc"></textarea>
+
+            <label for="artista">Artista: </label>
+            <input type="text" name="artista" [(ngModel)]="ingresso.artista">
+
+            <label for="valor">Valor do ingresso: </label>
+            <input name="valor" type="number" class="example-right-align" [(ngModel)]="ingresso.valor">
+
+            <label for="local">Local do evento: </label>
+            <input type="text" name="local" [(ngModel)]="ingresso.local">
+
+            <label for="data">Data do evento: </label>
+            <input type="date" name="data" [(ngModel)]="ingresso.data">
+
+            <label for="data">Backgorund do evento: </label>
+            <input type="file" name="data" [(ngModel)]="ingresso.foto">
+        </form>
+       
+    </div>
+    <div>
+        <button class="btnSalvarIngresso, primary" (click)="salvarIngresso()">Salvar</button>
+        <button class="btnSalvarIngresso, secundary"
                 routerLink="/listar">Cancelar</button>
-      </mat-card-actions>
+      </div>
 </form>

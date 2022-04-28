@@ -12,33 +12,17 @@ import { DeletarComponent } from './ingressos/templates/deletar/deletar.componen
 import { EditarComponent } from './ingressos/templates/editar/editar.component';
 
 // imports angular material
-import { MatSliderModule } from '@angular/material/slider';
-import { MatButtonModule } from '@angular/material/button';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatIconModule } from '@angular/material/icon';
-import { MatTableModule } from '@angular/material/table';
+
 import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatCardModule } from '@angular/material/card';
-import { MatInputModule } from '@angular/material/input';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MatSliderModule,
-    MatButtonModule,
-    MatDividerModule,
-    MatIconModule,
-    MatTableModule,
     BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatFormFieldModule,
-    MatCardModule,
-    MatInputModule
+    FormsModule
   ],
   declarations: [
     AppComponent,

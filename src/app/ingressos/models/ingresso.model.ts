@@ -6,4 +6,5 @@ export class Ingresso {
     valor: number = 0;
     local: string = '';
     data: string = 'Sem data';
+    foto: string = '';
 }
