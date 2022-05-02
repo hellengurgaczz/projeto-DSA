@@ -5,6 +5,7 @@ export class Ingresso {
     artista: string = '';
     valor: number = 0;
     local: string = '';
+    numero_ingressos: number = 0;
     data: string = 'Sem data';
     foto: string = '';
 }
