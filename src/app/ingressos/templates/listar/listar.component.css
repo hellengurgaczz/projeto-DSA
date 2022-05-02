@@ -8,6 +8,30 @@
 }
 
 .ultimosIngressos {
-    background-color: yellow;
+    background-color: rgb(187, 187, 11);
+    font-weight: bold;
+}
+
+.divIngressos {
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    padding: 20px;
+}
+
+.ingressos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ingresso {
+    flex-basis: 32%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: rgba(24, 46, 46, 0.205);
+}
+
+.evento {
     font-weight: bold;
 }
