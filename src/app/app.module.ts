@@ -14,7 +14,9 @@ import { EditarComponent } from './ingressos/templates/editar/editar.component';
 // imports angular material
 
 import { FormsModule } from '@angular/forms';
-import { ComprarIngressoComponent } from './ingressos/templates/comprar-ingresso/comprar-ingresso.component';
+import { ComprarIngressoComponent } from './compra/comprar-ingresso/comprar-ingresso.component';
+import { LoginComponent } from './login/login.component';
+import { LoginCadastroComponent } from './login/login-cadastro/login-cadastro.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { ComprarIngressoComponent } from './ingressos/templates/comprar-ingresso
     ListarComponent,
     DeletarComponent,
     EditarComponent,
-    ComprarIngressoComponent
+    ComprarIngressoComponent,
+    LoginComponent,
+    LoginCadastroComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

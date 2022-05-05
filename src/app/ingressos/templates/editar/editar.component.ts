@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Ingresso } from '../../models/ingresso.model';
-import { IngressoService } from '../../services/ingresso.service';
+import { Ingresso } from '../../../models/ingresso.model';
+import { IngressoService } from '../../../services/ingresso.service';
 
 @Component({
   selector: 'app-editar',

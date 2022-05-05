@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Ingresso } from '../../models/ingresso.model';
-import { IngressoService } from '../../services/ingresso.service';
+import { Ingresso } from '../../../models/ingresso.model';
+import { IngressoService } from '../../../services/ingresso.service';
 
 @Component({
   selector: 'app-listar',
