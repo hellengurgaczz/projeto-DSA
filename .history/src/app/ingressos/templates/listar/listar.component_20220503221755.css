@@ -36,13 +36,3 @@
     font-weight: bold;
 }
 
-a {
-    margin: 5px;
-}
-
-.acoes {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
