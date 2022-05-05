@@ -22,7 +22,6 @@ export class DeletarComponent implements OnInit {
   }
 
   deletarIngresso(){
-    console.log("--------> Executou o método excluirProduto()");
     this.service.deletarIngresso(this.ingresso.id).subscribe(() => {
           this.router.navigate(['/listar']);
     });

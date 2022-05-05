@@ -19,17 +19,14 @@ export class  IngressoService {
     }
 
     buscarIngressoPorId(id : number) : Observable<Ingresso>{
-        console.log("ID" +  id)
         return this.http.get<Ingresso>(this.URL + "/" + id);
     }
 
     cadastrarIngresso(ingresso : Ingresso) : Observable<any> {
-        console.log(this.URL, ingresso)
         return this.http.post(this.URL, ingresso);
     }
 
     atualizarIngresso(ingresso: Ingresso, id : number) : Observable<any> {
-        console.log(ingresso)
         return this.http.put(this.URL + "/" + id, ingresso);
     }
 

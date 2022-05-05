@@ -19,8 +19,9 @@
         <div class="acoes">
           <a routerLink="/editar/{{ ingresso.id }}">Editar</a>
           <a routerLink="/deletar/{{ ingresso.id }}">Excluir</a>
-          <a routerLink="/comprar/{{ ingresso.id }}">Comprar</a>
+          <a *ngIf="ingresso.numero_ingressos > 0" routerLink="/comprar/{{ ingresso.id }}">Comprar</a>
         </div>
+        
     </div>   
   </nav>
 </div>

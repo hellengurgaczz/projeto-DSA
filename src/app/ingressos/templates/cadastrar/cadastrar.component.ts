@@ -14,12 +14,9 @@ export class CadastrarComponent implements OnInit {
 
   constructor(private service: IngressoService, private router: Router) { }
 
-  ngOnInit(): void {
-    console.log('onInittt')
-  }
+  ngOnInit(): void {}
 
   salvarIngresso(){
-    console.log("--------> Executou o método salvar ingresso");
     this.service.cadastrarIngresso(this.ingresso).subscribe(() => {
       this.router.navigate(['/listar']);
     });

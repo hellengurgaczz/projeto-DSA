@@ -22,11 +22,9 @@ export class ComprarIngressoComponent implements OnInit {
     this.ingressoService.buscarIngressoPorId(Number(str)).subscribe((ingresso) =>{
       this.ingresso = ingresso;
     });
-
   }
 
   comprarIngresso(){
-    console.log("--------> Executou o método comprar ingresso()");
     this.compraService.cadastrarCompra(this.compra).subscribe(() => {
         this.ingresso.numero_ingressos = this.ingresso.numero_ingressos - this.compra.quantidade_ingressos;
         this.ingressoService.atualizarIngresso(this.ingresso, this.ingresso.id)
