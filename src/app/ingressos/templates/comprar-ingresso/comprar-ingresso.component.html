@@ -15,13 +15,12 @@
             <label for="quantidade_ingressos">Quantidade de ingressos: </label>
             <input type="number" name="quantidade_ingressos" [(ngModel)]="compra.quantidade_ingressos">
 
-            <label for="data">Data do evento: </label>
-            <input type="date" name="data" [(ngModel)]="ingresso.data">
-
         </form>
        
     </div>
     <div>
-       
+        <button class="btnSalvarCompra, primary" (click)="comprarIngresso()">Salvar</button>
+        <button class="btnSalvarCompra, secundary"
+                routerLink="/listar">Cancelar</button>
     </div>
 </form>

@@ -12,13 +12,14 @@ export class  IngressoService {
 
     constructor(private http: HttpClient) { }
 
-    URL = "http://localhost:3001/ingresso";
+    URL = "http://localhost:3001/ingressos";
 
     listarIngressos() : Observable<Ingresso[]>{
         return this.http.get<Ingresso[]>(this.URL);
     }
 
     buscarIngressoPorId(id : number) : Observable<Ingresso>{
+        console.log("ID" +  id)
         return this.http.get<Ingresso>(this.URL + "/" + id);
     }
 
@@ -28,6 +29,7 @@ export class  IngressoService {
     }
 
     atualizarIngresso(ingresso: Ingresso, id : number) : Observable<any> {
+        console.log(ingresso)
         return this.http.put(this.URL + "/" + id, ingresso);
     }
 
