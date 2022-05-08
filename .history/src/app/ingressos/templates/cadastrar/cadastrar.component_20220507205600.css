@@ -1,0 +1,39 @@
+div, form{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: LEMONMILK-Light;
+}
+
+
+input, textarea{
+  background-color: rgb(204, 204, 204);
+  border-radius: 5%;
+  border-style: double;
+  border-color: grey;
+  margin: 10px;
+}
+
+body{
+  background-image: url(../fonts/SL_042620_30310_10.jpg);
+  background-size: cover;
+  background-position: absolute;
+  z-index: 0;
+
+}
+
+@font-face{
+  font-family: cream-DEMO;
+  src: url(../fonts/cream-DEMO.ttf);
+}
+
+@font-face{
+  font-family: NEONLEDLight;
+  src: url(../fonts/NEONLEDLight.otf);
+}
+
+@font-face{
+  font-family: LEMONMILK-Light;
+  src: url(../fonts/LEMONMILK-Light.otf);
+}
+

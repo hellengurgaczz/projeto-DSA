@@ -1,0 +1,33 @@
+div.header {
+    display: flex;
+    background-image: url('../../imgs/show2.jpg');
+    background-size: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 120px;
+    color: white;
+    flex-direction: row;
+}
+
+.titulo {
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.login > a {
+    color: white;
+}
+
+
+@font-face{
+  font-family: NEONLEDLight;
+  src:url()
+}

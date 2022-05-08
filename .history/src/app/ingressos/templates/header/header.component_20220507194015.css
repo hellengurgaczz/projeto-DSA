@@ -1,0 +1,31 @@
+div.header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+}
+
+.titulo {
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: PatchFun;
+}
+
+.login {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.login > a {
+    color: white;
+}
+
+
+@font-face{
+  font-family: PatchFun;
+  src:url(../fonts/PatchFun.ttf)
+}
