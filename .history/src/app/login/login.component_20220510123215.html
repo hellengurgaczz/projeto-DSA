@@ -1,0 +1,14 @@
+<div class="all">
+    <label class="email" for="email">Email: </label>
+    <input type="text"  name="email" class="emailinput" [(ngModel)]="login.email">
+
+    <p></p>
+
+    <label class="senha" for="senha">Senha: </label>
+    <input type="password"  name="email" class="senhainput" [(ngModel)]="login.senha">
+
+    <div>
+        <button (click)="verificarLogin()">Entrar</button>
+        <a routerLink="login/cadastro">Cadastre-se</a>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.all{
+  font-family: LEMONMILKLight;
+  font-size: 25px;
+  text-align: center;
+  padding: 50px;
+}
+
+.email{
+  margin: 40px;
+}
+
+.senha{
+  margin: 40px;
+}
+
+
+
+@font-face{
+  font-family: LEMONMILKLight;
+  src: url(fonts/LEMONMILK-Light.otf);
+}

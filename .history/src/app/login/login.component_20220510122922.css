@@ -1,0 +1,10 @@
+.all{
+  font-family: LEMONMILKLight;
+  text-align: center;
+  padding: 50px;
+}
+
+@font-face{
+  font-family: LEMONMILKLight;
+  src: url(fonts/LEMONMILK-Light.otf);
+}
