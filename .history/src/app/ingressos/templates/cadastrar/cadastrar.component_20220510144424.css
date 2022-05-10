@@ -1,0 +1,86 @@
+div, form{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: LEMONMILK-Light;
+}
+
+.primary{
+  font-family: LEMONMILK-Light;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color:#33960c;
+  cursor: pointer;
+  border: #247007 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 25px;
+}
+
+.primary:active{
+  box-shadow: #33960c 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.secundary{
+  font-family: LEMONMILK-Light;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color:#b10909;
+  cursor: pointer;
+  border:#b10909 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 25px;
+}
+
+.secundary:active{
+  box-shadow: #b10909 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.cadastrarIngresso{
+  font-family: NEONLEDLight;
+  font-size: 20px;
+  background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+
+  }
+
+input, textarea{
+  background-image: url(../fonts/SL_042620_30310_10.jpg);
+  background-size: cover;
+  border-radius: 5%;
+  border-style: double;
+  border-color: grey;
+  margin: 10px;
+}
+
+
+@font-face{
+  font-family: cream-DEMO;
+  src: url(../fonts/cream-DEMO.ttf);
+}
+
+@font-face{
+  font-family: NEONLEDLight;
+  src: url(../fonts/NEONLEDLight.otf);
+}
+
+@font-face{
+  font-family: LEMONMILK-Light;
+  src: url(../fonts/LEMONMILK-Light.otf);
+}
+

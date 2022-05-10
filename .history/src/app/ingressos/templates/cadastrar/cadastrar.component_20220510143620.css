@@ -1,0 +1,95 @@
+div, form{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: LEMONMILK-Light;
+}
+
+.primary{
+  font-family: LEMONMILK-Light;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color:#33960c ;
+  cursor: pointer;
+  border: #247007 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: ;
+  touch-action: manipulation;
+  margin: 25px;
+}
+
+.primary:active{
+  box-shadow: #33960c 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.secundary{
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: cream-DEMO;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  margin-top: 15px;
+  outline: 0;
+  border: 1px solid black;
+  border-radius: 10%;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.secundary::after{
+  content: "";
+  background-color: #b10909;
+  border-radius: 10%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.secundary:hover::after{
+  top: 0px;
+  left: 0px;
+}
+
+.cadastrarIngresso{
+  font-family: NEONLEDLight;
+  color: #000000;
+  font-size: 20px;
+}
+
+input, textarea{
+  background-color: rgb(204, 204, 204);
+  border-radius: 5%;
+  border-style: double;
+  border-color: grey;
+  margin: 10px;
+}
+
+
+@font-face{
+  font-family: cream-DEMO;
+  src: url(../fonts/cream-DEMO.ttf);
+}
+
+@font-face{
+  font-family: NEONLEDLight;
+  src: url(../fonts/NEONLEDLight.otf);
+}
+
+@font-face{
+  font-family: LEMONMILK-Light;
+  src: url(../fonts/LEMONMILK-Light.otf);
+}
+
