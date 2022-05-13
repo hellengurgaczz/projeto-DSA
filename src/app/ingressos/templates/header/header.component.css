@@ -1,8 +1,9 @@
-div.header {
+.header {
     display: flex;
     flex-direction: column end;
     background-image: url(../fonts/SL_042620_30310_10.jpg);
     background-size: cover;
+    border-bottom: 5px double grey;
 }
 
 .titulo {
@@ -13,12 +14,14 @@ div.header {
     flex-direction: column end;
     font-size: 25px;
     font-family:AMP;
+    margin-left: 15px;
 }
 
 .desc{
-  font-family: LEMONMILK-Light;
+  font-family: Sacramento;
   text-shadow: 0 0 10px #424242;
-  font-size: 22px;
+  font-size: 32px;
+  font-weight: normal;
   padding-right: 25px;
 }
 
@@ -34,7 +37,7 @@ a{
   border: none;
   text-decoration: none;
   font-family: LEMONMILK-Light;
-  font-size: 25px;
+  font-size: 15px;
   outline: none;
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
@@ -98,8 +101,8 @@ a::after{
 }
 
 @font-face{
-  font-family: DecoturaICG;
-  src: url(../fonts/DecoturaICG.ttf);
+  font-family: Sacramento;
+  src: url(../fonts/Handlee-Regular.ttf);
 }
 
 @keyframes glowing-button-85 {

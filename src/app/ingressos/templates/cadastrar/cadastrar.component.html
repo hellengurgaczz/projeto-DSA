@@ -1,9 +1,9 @@
 <body>
   <div class="cadastrarIngresso">
-    <h1>Cadastrar Ingresso</h1>
+    <h1 style="font-weight: lighter;">CADASTRAR INGRESSO</h1>
   </div>
 <form>
-    <div>
+    <div class="titles">
         <form action="POST">
             <label for="evento">Nome do evento: </label>
             <input type="text" name="evento" [(ngModel)]="ingresso.evento">
@@ -27,12 +27,12 @@
             <input type="date" name="data" [(ngModel)]="ingresso.data">
 
             <label for="data">Backgorund do evento: </label>
-            <input type="file" name="data" [(ngModel)]="ingresso.foto">
+            <input class="foto" type="file" name="data" [(ngModel)]="ingresso.foto">
 
         </form>
 
     </div>
-    <div>
+    <div class="acoes">
         <button class="btnSalvarIngresso, primary" (click)="salvarIngresso()">Salvar</button>
         <button class="btnSalvarIngresso, secundary" routerLink="/listar">Cancelar</button>
       </div>

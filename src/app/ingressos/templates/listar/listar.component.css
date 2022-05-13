@@ -17,6 +17,7 @@
     position: relative;
     height: 100%;
     padding: 20px;
+    font-family: LEMONMILK;
 }
 
 .ingressos {
@@ -32,6 +33,7 @@
     background-color: rgba(24, 46, 46, 0.205);
 }
 
+
 .evento {
     font-weight: bold;
 }
@@ -45,4 +47,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@font-face{
+    font-family: LEMONMILK;
+    src: url(../fonts/LEMONMILK-Light.otf);
 }
