@@ -1,0 +1,86 @@
+.ingressosDisponiveis {
+    background-color: rgb(65, 207, 65);
+    font-weight: bold;
+}
+.ingressosIndisponiveis {
+    background-color: rgb(235, 46, 46);
+    font-weight: bold;
+}
+
+.ultimosIngressos {
+    background-color: rgb(187, 187, 11);
+    font-weight: bold;
+}
+
+.divIngressos {
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    padding: 20px;
+
+    font-family: LEMONMILK;
+}
+
+.ingressos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ingresso {
+    flex-basis: 32%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: rgba(24, 46, 46, 0.205);
+}
+
+
+.evento {
+    font-weight: bold;
+}
+
+.deletar, .editar, .comprar {
+  margin: 5px;
+  letter-spacing: 2px;
+  font-family: LEMONMILK-Light;
+  font-size: 13px;
+  height: 50px;
+  width: 100px;
+  text-decoration: none;
+  border: none;
+  color: #000;
+  background: #fff;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.deletar::before, .editar::before, .comprar::before{
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.deletar:active, .editar:active, .comprar:active{
+  color: #000;
+}
+
+.deletar:active::after, .editar:active::after, .comprar:active
+
+
+@font-face{
+    font-family: LEMONMILK;
+    src: url(../fonts/LEMONMILK-Light.otf);
+}

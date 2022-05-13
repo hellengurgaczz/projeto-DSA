@@ -1,0 +1,25 @@
+<div class="divIngressos">
+  <nav class="ingressos">
+    <div class="ingresso" *ngFor="let ingresso of ingressos">
+
+      <div>
+        <span class="ingressosDisponiveis" *ngIf="ingresso.numero_ingressos > 10">Ingressos disponíveis</span>
+        <span class="ultimosIngressos" *ngIf="ingresso.numero_ingressos <= 10 && ingresso.numero_ingressos != 0">Últimos ingressos</span>
+        <span class="ingressosIndisponiveis" *ngIf="ingresso.numero_ingressos == 0">Ingressos esgotados</span>
+      </div>
+
+        <p class="evento"> {{ingresso.evento}} </p>
+        <p class="desc"> {{ingresso.desc}} </p>
+        <p class="artista"> Artista: {{ingresso.artista}} </p>
+        <p class="valor"> Valor: R${{ingresso.valor}} </p>
+        <p class="local"> Local: {{ingresso.local}} </p>
+        <p class="data"> Data: {{ingresso.data}} </p>
+
+          <a class="editar" routerLink="/editar/{{ ingresso.id }}">Editar</a>
+          <a routerLink="/deletar/{{ ingresso.id }}">Excluir</a>
+          <a *ngIf="ingresso.numero_ingressos > 0" routerLink="/comprar/{{ ingresso.id }}">Comprar</a>
+
+
+    </div>
+  </nav>
+</div>

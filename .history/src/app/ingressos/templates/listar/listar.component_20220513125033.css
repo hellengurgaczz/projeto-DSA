@@ -1,0 +1,56 @@
+.ingressosDisponiveis {
+    background-color: rgb(65, 207, 65);
+    font-weight: bold;
+}
+.ingressosIndisponiveis {
+    background-color: rgb(235, 46, 46);
+    font-weight: bold;
+}
+
+.ultimosIngressos {
+    background-color: rgb(187, 187, 11);
+    font-weight: bold;
+}
+
+.divIngressos {
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    padding: 20px;
+    border-radius: 25px;
+    font-family: LEMONMILK;
+}
+
+.ingressos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ingresso {
+    flex-basis: 32%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: rgba(24, 46, 46, 0.205);
+}
+
+
+.evento {
+    font-weight: bold;
+}
+
+a {
+    margin: 5px;
+}
+
+.acoes {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face{
+    font-family: LEMONMILK;
+    src: url(../fonts/LEMONMILK-Light.otf);
+}
