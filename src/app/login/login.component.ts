@@ -12,16 +12,21 @@ export class LoginComponent implements OnInit {
 
   login: Login = new Login();
 
-  constructor(private service: LoginService, private router: Router, private route: ActivatedRoute) { }
+  constructor(private loginService: LoginService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
    
   }
 
   verificarLogin() {
-    this.service.buscarLogin(this.login).subscribe(() => {
-      this.router.navigate(['/listar']);
+    const email = this.route.snapshot.paramMap.get("email");
+    this.loginService.buscarLogin(String(email)).subscribe((login) =>{
+      this.login = login;
     });
+
+    if(this.login && this.login.senha === this.login.senha) {
+      this.router.navigate(['/listar']);
+    }
   }
 
 }

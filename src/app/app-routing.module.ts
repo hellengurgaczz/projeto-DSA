@@ -9,7 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { LoginCadastroComponent } from './login/login-cadastro/login-cadastro.component';
 
 const routes: Routes = [
-  {path: "", component: ListarComponent},
+  {path: "", component: LoginComponent},
   {path: "cadastrar", component: CadastrarComponent},
   {path: "listar", component: ListarComponent},
   {path: "editar/:id", component: EditarComponent},

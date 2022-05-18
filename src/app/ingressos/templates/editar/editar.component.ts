@@ -26,5 +26,4 @@ export class EditarComponent implements OnInit {
       this.router.navigate(['/listar']);
     });
   }
-
 }
