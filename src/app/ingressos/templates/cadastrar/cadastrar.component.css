@@ -172,10 +172,6 @@ textarea, .foto{
   src: url(../fonts/cream-DEMO.ttf);
 }
 
-@font-face{
-  font-family: NEONLEDLight;
-  src: url(../fonts/NEONLEDLight.otf);
-}
 
 @font-face{
   font-family: LEMONMILK-Light;
