@@ -19,11 +19,8 @@ export class LoginComponent implements OnInit {
   }
 
   verificarLogin() {
-    const email = this.route.snapshot.paramMap.get("email");
-    this.loginService.buscarLogin(String(email)).subscribe((login) =>{
-      this.login = login;
-    });
-
+    this.loginService.verificarLogin();
+    
     if(this.login && this.login.senha === this.login.senha) {
       this.router.navigate(['/listar']);
     }

@@ -28,9 +28,10 @@ export class ComprarIngressoComponent implements OnInit {
   }
   
   comprarIngresso(){
-    
+   
     this.compra.id_ingresso = this.ingresso.id;
-    
+    //this.compra.cpf_comprador = this.login.cpf;
+
     this.compraService.cadastrarCompra(this.compra).subscribe(() => {
         this.ingresso.numero_ingressos = this.ingresso.numero_ingressos - this.compra.quantidade_ingressos;
         this.ingressoService.atualizarIngresso(this.ingresso, this.ingresso.id).subscribe(() => {

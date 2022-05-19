@@ -28,10 +28,7 @@ export class LoginCadastroComponent implements OnInit {
   }
 
   verificarLogin() {
-    const email = this.route.snapshot.paramMap.get("email");
-    this.loginService.buscarLogin(String(email)).subscribe((login) =>{
-      this.login = login;
-    });
+    this.loginService.verificarLogin();
 
     if(this.login && this.login.senha === this.login.senha) {
       return false;

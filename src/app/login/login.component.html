@@ -1,9 +1,12 @@
 <div class="all">
     <label class="email" for="email">Email: </label>
-    <input type="text"  name="email" class="emailinput" [(ngModel)]="login.email">
+    <input type="text"  name="email" [(ngModel)]="login.email">
+
+    <label for="cpf">CPF: </label>
+    <input type="text"  name="cpf" [(ngModel)]="login.cpf">
     
     <label class="senha" for="senha">Senha: </label>
-    <input type="password"  name="email" class="senhainput" [(ngModel)]="login.senha">
+    <input type="password"  name="email"[(ngModel)]="login.senha">
 
     <div>
         <button (click)="verificarLogin()">Entrar</button>
