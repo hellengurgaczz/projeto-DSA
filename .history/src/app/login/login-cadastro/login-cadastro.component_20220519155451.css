@@ -1,0 +1,9 @@
+.cadastrarLogin{
+  font-family: NEON;
+}
+
+
+@font-face{
+  font-family: NEON;
+  src: url(../fonts/NEONLEDLight.otf)
+}

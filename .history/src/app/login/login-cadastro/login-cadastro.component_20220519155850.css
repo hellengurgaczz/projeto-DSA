@@ -1,0 +1,26 @@
+.cadastrarLogin{
+  font-family: NEON;
+  font-size: 23px;
+  text-align: center;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #560A86, #7122FA, #F148FB, #FFACFC);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.titles{
+  font-family: LEMONMILK-Light;
+}
+
+input{
+  font-family: LEMONMILK-Light;
+}
+
+.acoes{
+  
+}
+
+@font-face{
+  font-family: NEON;
+  src: url(../fonts/NEONLEDLight.otf)
+}
