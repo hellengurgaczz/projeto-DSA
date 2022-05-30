@@ -1,0 +1,21 @@
+<body>
+    <div class="cadastrarLogin">
+      <h1>CADASTRE-SE</h1>
+    </div>
+  <form>
+      <div class="titles">
+          <form action="POST">
+              <label for="email">E-mail: </label>
+              <input type="text" name="email" [(ngModel)]="login.email">
+
+              <label for="senha">Senha: </label>
+              <input name="senha" type="password" [(ngModel)]="login.senha">
+
+          </form>
+
+      </div>
+      <div class="acoes">
+          <button class="btnSalvarLogin, primary" (click)="salvarLogin()">Salvar</button>
+        </div>
+  </form>
+</body>
