@@ -1,0 +1,23 @@
+<div class="comprarIngresso">
+    <h1 style="font-weight: normal;">
+        Comprar ingresso para {{ ingresso.evento }}
+    </h1>
+</div>
+<form>
+    <div>
+        <form action="POST">
+
+            <label for="cpf_comprador">CPF: </label>
+            <input name="cpf_comprador" [(ngModel)]="compra.cpf_comprador">
+
+            <label for="quantidade_ingressos">Quantidade de ingressos: </label>
+            <input type="number" name="quantidade_ingressos" [(ngModel)]="compra.quantidade_ingressos">
+
+        </form>
+
+    </div>
+    <div>
+        <button class="btnSalvarCompra, primary" (click)="comprarIngresso()">Salvar</button>
+        <button class="btnSalvarCompra, secundary" routerLink="/listar">Cancelar</button>
+    </div>
+</form>

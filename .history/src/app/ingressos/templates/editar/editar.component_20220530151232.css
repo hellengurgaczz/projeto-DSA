@@ -1,0 +1,12 @@
+div, form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: LEMONMILK-Light;
+}
+
+body{
+  background-image: url(../fonts/SL_042620_30310_10.jpg);
+  background-size: cover;
+  margin: 0;
+}

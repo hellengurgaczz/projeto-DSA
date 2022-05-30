@@ -1,0 +1,34 @@
+.comprarIngresso{
+  font-family: AMP;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #560A86, #7122FA, #F148FB, #FFACFC);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+body{
+  background-image: url(../comprar-ingresso/fonts/SL_042620_30310_10.jpg);
+  background-size: cover;
+  margin: 0;
+}
+
+div, form{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: LEMONMILK-Light;
+}
+
+input, textarea {
+  font-family: LEMONMILK-Light;
+  background-size: cover;
+  border-radius: 8%;
+  border-style: double;
+  border-color: grey;
+  margin: 10px;
+  height: 28px;
+  width: 850px;
+  resize: none;
+}

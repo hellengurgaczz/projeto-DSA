@@ -1,0 +1,82 @@
+.ingressosDisponiveis {
+    background-color: #00e500;
+    border-radius: 5%;
+    padding: 8px;
+    font-family: BB;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.ingressosIndisponiveis {
+    background-color: #FF0000;
+    border-radius: 5%;
+    padding: 8px;
+    font-family: BB;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.ultimosIngressos {
+    background-color: #e9d700;
+    border-radius: 5%;
+    padding: 8px;
+    font-family: BB;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.divIngressos {
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    padding: 20px;
+    font-family: LEMONMILK;
+}
+.ingressos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ingresso {
+    flex-basis: 32%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: rgba(24, 46, 46, 0.205);
+}
+.evento {
+    font-size: 38px;
+    text-shadow: 2px 2px grey;
+    font-family: IndianaJones;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.desc, .data{
+  text-align: center;
+  font-weight: bolder;
+}
+
+.data{
+  font-size: 20px;
+}
+
+.valor{
+    color: #007500;
+    font-weight: bolder;
+}
+
+a{
+  
+}
+
+@font-face {
+    font-family: LEMONMILK;
+    src: url(../fonts/LEMONMILK-Light.otf);
+}
+
+@font-face {
+  font-family: IndianaJones;
+  src: url(../fonts/Indiana-Jonas-48p.otf);
+}
+
+@font-face {
+  font-family: BB;
+  src: url(../fonts/IMPACTREVERSE.ttf);
+}

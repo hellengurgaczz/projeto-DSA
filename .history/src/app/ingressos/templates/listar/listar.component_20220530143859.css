@@ -1,0 +1,129 @@
+.ingressosDisponiveis {
+    background-color: #00e500;
+    border-radius: 5%;
+    padding: 8px;
+    font-family: BB;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.ingressosIndisponiveis {
+    background-color: #FF0000;
+    border-radius: 5%;
+    padding: 8px;
+    font-family: BB;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.ultimosIngressos {
+    background-color: #e9d700;
+    border-radius: 5%;
+    padding: 8px;
+    font-family: BB;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.divIngressos {
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    padding: 20px;
+    font-family: LEMONMILK;
+}
+.ingressos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ingresso {
+    flex-basis: 32%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: rgba(24, 46, 46, 0.205);
+}
+.evento {
+    font-size: 38px;
+    text-shadow: 2px 2px grey;
+    font-family: IndianaJones;
+    text-align: center;
+    font-display:;
+}
+
+.deletar, .editar, .comprar {
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  font-family: LEMONMILK-Light;
+  font-size: 16px;
+  height: 60px;
+  width: 200px;
+  text-decoration: none;
+  border: none;
+  color: #000;
+  background: #fff;
+  position: relative;
+  z-index: 0;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.deletar::before, .editar::before, .comprar::before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.deletar:active, .editar:active, .comprar:active {
+  color: #000;
+}
+
+.deletar:active::after, .editar:active::after, .comprar:active::after {
+  background: transparent;
+}
+
+.deletar:hover::before, .editar:hover::before, .comprar:hover::before {
+  opacity: 1;
+}
+
+.deletar::after, .editar::after, .comprar::after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+@font-face {
+    font-family: LEMONMILK;
+    src: url(../fonts/LEMONMILK-Light.otf);
+}
+
+@font-face {
+  font-family: IndianaJones;
+  src: url(../fonts/Indiana-Jonas-48p.otf);
+}
+
+@font-face {
+  font-family: BB;
+  src: url(../fonts/IMPACTREVERSE.ttf);
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}

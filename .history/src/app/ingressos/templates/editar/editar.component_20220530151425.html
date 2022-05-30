@@ -1,0 +1,38 @@
+<body>
+  <div class="editarIngresso">
+      <h1>Editar Ingresso</h1>
+    </div>
+    <form>
+      <div class="titles">
+          <form action="POST">
+              <label for="evento">Nome do evento: </label>
+              <input type="text" name="evento" [(ngModel)]="ingresso.evento">
+
+              <label for="desc">Descrição: </label>
+              <textarea name="desc" [(ngModel)]="ingresso.desc"></textarea>
+
+              <label for="artista">Artista: </label>
+              <input type="text" name="artista" [(ngModel)]="ingresso.artista">
+
+              <label for="valor">Valor do ingresso: </label>
+              <input type="number" name="valor" class="example-right-align" [(ngModel)]="ingresso.valor">
+
+              <label for="local">Local do evento: </label>
+              <input type="text" name="local" [(ngModel)]="ingresso.local">
+
+              <label for="numero_ingressos">Número de ingressos disponíveis: </label>
+              <input type="number" name="numero_ingressos" [(ngModel)]="ingresso.numero_ingressos">
+
+              <label for="data">Data do evento: </label>
+              <input type="date" name="data" [(ngModel)]="ingresso.data">
+
+
+          </form>
+
+      </div>
+      <div class="acoes">
+          <button class="btnSalvarIngresso, primary" (click)="salvarIngresso()">Salvar</button>
+          <button class="btnSalvarIngresso, secundary" routerLink="/listar">Cancelar</button>
+        </div>
+  </form>
+</body>

@@ -1,0 +1,16 @@
+<div class="excluirIngresso">
+    <h1 sty>Deletar ingresso</h1>
+    <h4 class="desc">Tem certeza que deseja deletar este ingresso?</h4>
+</div>
+<form>
+    <label for="evento">Nome do evento: </label>
+    <input type="text" name="evento" [(ngModel)]="ingresso.evento">
+
+    <label for="desc">Descrição: </label>
+    <textarea name="desc" [(ngModel)]="ingresso.desc"></textarea>
+    <div class="acoes">
+      <button mat-raised-button class="btnExcluirIngresso" (click)="deletarIngresso()" color="warn">CONFIRMAR</button>
+      <button mat-raised-button class="btnExcluirIngresso" routerLink="/listar">Cancelar</button>
+    </div>
+</form>
+

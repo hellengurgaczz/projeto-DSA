@@ -1,0 +1,25 @@
+
+
+  div, form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: LEMONMILK-Light;
+  }
+
+  .mat-form-field{
+    padding: 25px;
+  }
+
+  input, textarea{
+    background-color: rgb(204, 204, 204);
+    border-radius: 5%;
+    border-style: double;
+    border-color: grey;
+  }
+
+  div{
+    color: rgb(117, 64, 73);
+    text-shadow: 5px 1px rgb(231, 231, 231);
+
+  }
