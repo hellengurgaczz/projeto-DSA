@@ -1,0 +1,128 @@
+.ingressosDisponiveis {
+    background-color: #00e500;
+    border-radius: 5%;
+    padding: 8px;
+    font-family: IMPACTREVERSE;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.ingressosIndisponiveis {
+    background-color: #FF0000;
+    border-radius: 5%;
+    padding: 8px;
+    font-family: IMPACTREVERSE;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.ultimosIngressos {
+    background-color: #e9d700;
+    border-radius: 5%;
+    padding: 8px;
+    font-family: IMPACTREVERSE;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.divIngressos {
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    padding: 20px;
+    font-family: LEMONMILK;
+}
+.ingressos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ingresso {
+    flex-basis: 32%;
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    padding-bottom: 30px;
+    background-color: rgba(24, 46, 46, 0.205);
+}
+
+.evento {
+    font-size: 38px;
+    text-shadow: 2px 2px grey;
+    font-family: IndianaJones;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.desc, .data{
+  text-align: center;
+  font-weight: bolder;
+  padding-bottom: 15px;
+}
+
+.data{
+  font-size: 20px;
+}
+
+.valor{
+    color: #007500;
+    font-weight: bolder;
+}
+
+a{
+  text-decoration: ;
+}
+
+.comprar{
+  color: #FFF;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.comprar::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.1);
+  transition: all 0.3s;
+}
+
+.comprar:hover::before{
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+
+.comprar::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255,255,255,0.5);
+  transform: scale(1.2,1.2);
+}
+
+.comprar:hover::after{
+  opacity: 1;
+  transform: scale(1,1);
+}
+
+@font-face {
+    font-family: LEMONMILK;
+    src: url(../fonts/LEMONMILK-Light.otf);
+}
+
+@font-face {
+  font-family: IndianaJones;
+  src: url(../fonts/Indiana-Jonas-48p.otf);
+}
+
+@font-face {
+  font-family: IMPACTREVERSE;
+  src: url(../fonts/IMPACTREVERSE.ttf);
+}
