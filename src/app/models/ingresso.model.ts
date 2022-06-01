@@ -7,5 +7,4 @@ export class Ingresso {
     local: string = '';
     numero_ingressos: number = 0;
     data: string = 'Sem data';
-    foto: string = '';
 }
