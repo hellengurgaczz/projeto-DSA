@@ -1,0 +1,153 @@
+.ingressosDisponiveis {
+    background-color: #00e500;
+    border-radius: 5%;
+    padding: 8px;
+    font-family: IMPACTREVERSE;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.ingressosIndisponiveis {
+    background-color: #FF0000;
+    border-radius: 5%;
+    padding: 8px;
+    font-family: IMPACTREVERSE;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.ultimosIngressos {
+    background-color: #e9d700;
+    border-radius: 5%;
+    padding: 8px;
+    font-family: IMPACTREVERSE;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.divIngressos {
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: LEMONMILK;
+    background-image: url(../fonts/SL_042620_30310_10.jpg);
+    background-size: cover;
+}
+.ingressos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ingresso {
+    flex-basis: 32%;
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 39px;
+    padding-bottom: 30px;
+    background: #d9d9d9;
+    border-bottom: 2px solid #b3b3b3;
+    border-right: 2px solid #b3b3b3;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transition-duration: 1s;
+}
+
+.ingresso:hover{
+  border-top: 2px solid #b3b3b3;
+  border-left: 2px solid #b3b3b3;
+  border-bottom: 2px solid #ff3385;
+  border-right: 2px solid #ff3385;
+  box-shadow: #ff3385 5px 5px, #ff3385aa 10px 10px, #ff3385ff 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.evento {
+    font-size: 38px;
+    text-shadow: 2px 2px grey;
+    font-family: IndianaJones;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.desc, .data{
+  text-align: center;
+  font-weight: bolder;
+  padding-bottom: 15px;
+}
+
+.data{
+  font-size: 20px;
+}
+
+.valor{
+    color: #007500;
+    font-weight: bolder;
+}
+
+.comprar, .editar, .deletar {
+  align-items: center;
+  margin-left: 18px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #000;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 42px;
+  justify-content: center;
+  width: 100px;
+  padding: 15px;
+  text-align: center;
+  transition: all .3s;
+}
+
+.comprar:hover {
+  border-color: #007500;
+  color: #007500;
+  fill: #007500;
+}
+
+.comprar:active {
+  border-color: #00E400;
+  color: #00E400;
+  fill: #00E400;
+}
+
+.editar:hover {
+  border-color: #024376;
+  color: #024376;
+  fill: #024376;
+}
+
+.editar:active {
+  border-color: #088FFA;
+  color: #088FFA;
+  fill: #088FFA;
+}
+
+.deletar:hover {
+  border-color: #BF181D;
+  color: #BF181D;
+  fill: #BF181D;
+}
+
+.deletar:active {
+  border-color: #E84B4F;
+  color: #E84B4F;
+  fill: #E84B4F;
+}
+
+
+@font-face {
+    font-family: LEMONMILK;
+    src: url(../fonts/LEMONMILK-Light.otf);
+}
+
+@font-face {
+  font-family: IndianaJones;
+  src: url(../fonts/Indiana-Jonas-48p.otf);
+}
+
+@font-face {
+  font-family: IMPACTREVERSE;
+  src: url(../fonts/IMPACTREVERSE.ttf);
+}
