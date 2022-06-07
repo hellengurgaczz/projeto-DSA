@@ -19,11 +19,12 @@ export class LoginComponent implements OnInit {
   }
 
   verificarLogin() {
-    this.loginService.verificarLogin();
-    
-    if(this.login && this.login.senha === this.login.senha) {
-      this.router.navigate(['/listar']);
-    }
+    this.loginService.listarLogins().subscribe(logins => {
+      logins.forEach(login => {
+        if(login.email === this.login.email && login.senha === this.login.senha) {
+          this.router.navigate(['/listar']);
+        }
+      });
+    });
   }
-
 }

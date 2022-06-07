@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { ComprarIngressoComponent } from './compra/comprar-ingresso/comprar-ingresso.component';
 import { LoginComponent } from './login/login.component';
 import { LoginCadastroComponent } from './login/login-cadastro/login-cadastro.component';
+import { NavComponent } from './ingressos/templates/nav/nav.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { LoginCadastroComponent } from './login/login-cadastro/login-cadastro.co
     EditarComponent,
     ComprarIngressoComponent,
     LoginComponent,
-    LoginCadastroComponent
+    LoginCadastroComponent,
+    NavComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

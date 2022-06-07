@@ -11,7 +11,7 @@ import { LoginService } from 'src/app/services/login.service';
 export class LoginCadastroComponent implements OnInit {
 
   login: Login = new Login();
-
+  response: boolean = false;
   constructor(private loginService: LoginService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -19,21 +19,23 @@ export class LoginCadastroComponent implements OnInit {
   }
 
   salvarLogin() {
-    // verifica se este login já não existe:
-    if(!this.verificarLogin()) {
-      this.loginService.cadastrarLogin(this.login).subscribe(() => {
-        this.router.navigate(['/listar']);
-      });    
-    }
+  
+    //verifica se este login já não existe:
+      this.loginService.listarLogins().subscribe(logins => {
+       
+        logins.forEach(login => {
+          if((login.email === this.login.email && login.senha === this.login.senha)) {
+            this.response = true;
+          } 
+        });
+
+        if(!this.response) {
+          this.loginService.cadastrarLogin(this.login).subscribe(() => {
+            this.router.navigate(['/listar']);
+          });    
+        }
+      });
   }
 
-  verificarLogin() {
-    this.loginService.verificarLogin();
 
-    if(this.login && this.login.senha === this.login.senha) {
-      return false;
-    } else {
-      return true;
-    }
-  }
 }

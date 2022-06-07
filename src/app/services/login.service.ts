@@ -13,22 +13,16 @@ export class LoginService {
 
   constructor(private http: HttpClient, private router: Router, private route: ActivatedRoute) { }
 
+  logins : Login[] = [];
+
   URL = "http://localhost:3001/logins";
 
-    buscarLogin(email : String) : Observable<Login>{
-      return this.http.get<Login>(this.URL + "/");
-    }
-
     cadastrarLogin(login : Login) : Observable<any> {
-      console.log(login)
       return this.http.post(this.URL, login);
     }
 
-    verificarLogin() {
-      const email = this.route.snapshot.paramMap.get("email");
-      this.buscarLogin(String(email)).subscribe((login) =>{
-        this.login = login;
-        return login;
-      });
+    listarLogins() : Observable<Login[]>{
+      return this.http.get<Login[]>(this.URL);
     }
+
 }
