@@ -1,0 +1,49 @@
+div {
+    display: flex;
+    background-image: url(../fonts/glitter.jpg);
+    width: 100%;
+    height: 40px;
+}
+
+.options {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    padding: 20px;
+    color: black;
+    font-family: LEMONMILK;
+    text-decoration: none;
+    font-weight: bold;
+    background-image: url(../fonts/glitter.jpg);
+    user-select: none;
+    white-space: nowrap;
+    transition: all .05s linear;
+    height: 50px;
+}
+a::before, a::after{
+  content: "";
+  position: absolute;
+  background: #e8e8e8;
+  transition: all .2s linear;
+}
+a::before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+}
+
+.pesquisaIngresso {
+    justify-content: center;
+    align-items: center;
+    position: end;
+}
+
+input {
+    width: 300px;
+    height: 20px;
+    border-radius: 5px;
+}
