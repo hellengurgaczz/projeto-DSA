@@ -32,7 +32,8 @@ input {
   text-align: center;
   padding: 100px;
   background-image: url(../fonts/SL_042620_30310_10.jpg);
-  background-size: cover;
+  background-size: 100%;
+  margin: 0;
 }
 
 .acoes {
@@ -56,6 +57,7 @@ input {
   -webkit-user-select: none;
   touch-action: manipulation;
   margin: 25px;
+  margin-bottom: 500px;
 }
 .primary:active {
   box-shadow: 0px 0px 0px 0px;
