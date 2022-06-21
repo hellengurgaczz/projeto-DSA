@@ -5,24 +5,26 @@ import { Observable } from 'rxjs';
 import { Login } from '../models/login.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class LoginService {
-
   login: Login = new Login();
 
-  constructor(private http: HttpClient, private router: Router, private route: ActivatedRoute) { }
+  constructor(
+    private http: HttpClient,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {}
 
-  logins : Login[] = [];
+  logins: Login[] = [];
 
-  URL = "http://localhost:3001/logins";
+  URL = 'http://localhost:3000/logins';
 
-    cadastrarLogin(login : Login) : Observable<any> {
-      return this.http.post(this.URL, login);
-    }
+  cadastrarLogin(login: Login): Observable<any> {
+    return this.http.post(this.URL, login);
+  }
 
-    listarLogins() : Observable<Login[]>{
-      return this.http.get<Login[]>(this.URL);
-    }
-
+  listarLogins(): Observable<Login[]> {
+    return this.http.get<Login[]>(this.URL);
+  }
 }

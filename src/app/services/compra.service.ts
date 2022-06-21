@@ -4,16 +4,14 @@ import { Observable } from 'rxjs';
 import { Compra } from '../models/compra.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CompraService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
+  URL = 'http://localhost:3000/compras';
 
-  URL = "http://localhost:3001/compras";
-
-  cadastrarCompra(compra : Compra) : Observable<any> {
+  cadastrarCompra(compra: Compra): Observable<any> {
     return this.http.post(this.URL, compra);
   }
-
 }
