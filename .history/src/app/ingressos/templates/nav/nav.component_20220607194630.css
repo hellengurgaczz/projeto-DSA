@@ -1,0 +1,46 @@
+div {
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+.logo {
+  background-image: url(../fonts/logo.png);
+  background-size: 50px ;
+  background-position: center;
+}
+
+.options {
+    text-align: center;
+    align-items: center;
+}
+
+a {
+    padding: 10px;
+    margin-left: 35px;
+    margin-left: 35px;
+    color: black;
+    font-family: LEMONMILK;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 13px 20px;
+    border: 2px solid #B500FF;
+    font-size: 17px;
+    transition: 0.3s;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+
+
+.pesquisaIngresso {
+    justify-content: center;
+    align-items: center;
+    position: end;
+}
+
+input {
+    width: 300px;
+    height: 20px;
+    border-radius: 5px;
+}

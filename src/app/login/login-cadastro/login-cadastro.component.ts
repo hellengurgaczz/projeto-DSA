@@ -12,6 +12,7 @@ export class LoginCadastroComponent implements OnInit {
 
   login: Login = new Login();
   response: boolean = false;
+
   constructor(private loginService: LoginService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -19,10 +20,8 @@ export class LoginCadastroComponent implements OnInit {
   }
 
   salvarLogin() {
-  
     //verifica se este login já não existe:
       this.loginService.listarLogins().subscribe(logins => {
-       
         logins.forEach(login => {
           if((login.email === this.login.email && login.senha === this.login.senha)) {
             this.response = true;
@@ -30,8 +29,10 @@ export class LoginCadastroComponent implements OnInit {
         });
 
         if(!this.response) {
+          console.log('a')
           this.loginService.cadastrarLogin(this.login).subscribe(() => {
             this.router.navigate(['/listar']);
+            sessionStorage.setItem('login', JSON.stringify(this.login.profile));
           });    
         }
       });

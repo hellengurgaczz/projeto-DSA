@@ -20,6 +20,10 @@ input {
   margin: 35px;
 }
 
+.function {
+  margin-bottom: 300px;
+}
+
 button {
   font-family: LEMONMILK;
   font-size: 20px;

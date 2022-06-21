@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
     this.loginService.listarLogins().subscribe(logins => {
       logins.forEach(login => {
         if(login.email === this.login.email && login.senha === this.login.senha) {
+          sessionStorage.setItem('login', JSON.stringify(login.profile));
           this.router.navigate(['/listar']);
         }
       });

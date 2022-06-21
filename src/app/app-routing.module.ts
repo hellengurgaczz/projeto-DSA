@@ -12,6 +12,7 @@ const routes: Routes = [
   {path: "", component: LoginComponent},
   {path: "cadastrar", component: CadastrarComponent},
   {path: "listar", component: ListarComponent},
+  {path: "listar/:id", component: ListarComponent},
   {path: "editar/:id", component: EditarComponent},
   {path: "deletar/:id", component: DeletarComponent},
   {path: "comprar/:id", component: ComprarIngressoComponent},
@@ -20,7 +21,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
   exports: [RouterModule]
 })
 

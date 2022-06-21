@@ -35,7 +35,8 @@ input {
 
 .acoes {
   display: flex;
-  margin-bottom: 25px;
+  margin-top: 45px;
+  margin-bottom: 500px;
 }
 
 .primary {

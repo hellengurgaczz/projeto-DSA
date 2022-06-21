@@ -6,7 +6,7 @@ div, form {
 }
 
 body {
-  background-image: url(../fonts/background.jpg);
+  background: url(../fonts/background.jpg) no-repeat center center fixed;
   background-size: cover;
   background-blend-mode: exclusion;
   margin: 0;
@@ -150,7 +150,7 @@ textarea, .foto {
 
 .acoes {
   display: flex;
-  margin-bottom: 25px;
+  margin-bottom: 250px;
 }
 
 @font-face {
