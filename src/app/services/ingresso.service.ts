@@ -1,33 +1,38 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Ingresso } from '../models/ingresso.model';
+import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
+import { Ingresso } from "../models/ingresso.model";
+
 
 @Injectable({
-  providedIn: 'root',
+    providedIn: 'root'
 })
-export class IngressoService {
-  constructor(private http: HttpClient) {}
 
-  URL = 'http://localhost:3000/ingressos';
+export class  IngressoService {
 
-  listarIngressos(): Observable<Ingresso[]> {
-    return this.http.get<Ingresso[]>(this.URL);
-  }
+    constructor(private http: HttpClient) { }
 
-  buscarIngressoPorId(id: number): Observable<Ingresso> {
-    return this.http.get<Ingresso>(this.URL + '/' + id);
-  }
+    URL = "http://localhost:3001/ingressos";
 
-  cadastrarIngresso(ingresso: Ingresso): Observable<any> {
-    return this.http.post(this.URL, ingresso);
-  }
+    listarIngressos() : Observable<Ingresso[]>{
+        return this.http.get<Ingresso[]>(this.URL);
+    }
 
-  atualizarIngresso(ingresso: Ingresso, id: number): Observable<any> {
-    return this.http.put(this.URL + '/' + id, ingresso);
-  }
+    buscarIngressoPorId(id : number) : Observable<Ingresso>{
+        return this.http.get<Ingresso>(this.URL + "/" + id);
+    }
 
-  deletarIngresso(id: number): Observable<any> {
-    return this.http.delete(this.URL + '/' + id);
-  }
+    cadastrarIngresso(ingresso : Ingresso) : Observable<any> {
+        return this.http.post(this.URL, ingresso);
+    }
+
+    atualizarIngresso(ingresso: Ingresso, id : number) : Observable<any> {
+        return this.http.put(this.URL + "/" + id, ingresso);
+    }
+
+    deletarIngresso(id : number) : Observable<any> {
+        return this.http.delete(this.URL + "/" + id);
+    }
+
 }
+
