@@ -10,6 +10,11 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
+  }
+
+  logout() {
+    sessionStorage.removeItem('login');
   }
 
 }

@@ -15,8 +15,8 @@
         <p class="local"> Local: {{ingresso.local}} </p>
         <p class="data"> Data: {{ingresso.data}} </p>
 
-          <a class="editar" routerLink="/editar/{{ ingresso.id }}">Editar</a>
-          <a class="deletar" routerLink="/deletar/{{ ingresso.id }}">Excluir</a>
+          <a class="editar" *ngIf="!!profile_authorized" routerLink="/editar/{{ ingresso.id }}">Editar</a>
+          <a class="deletar" *ngIf="!!profile_authorized"routerLink="/deletar/{{ ingresso.id }}">Excluir</a>
           <a class="comprar" *ngIf="ingresso.numero_ingressos > 0" routerLink="/comprar/{{ ingresso.id }}">Comprar</a>
 
 

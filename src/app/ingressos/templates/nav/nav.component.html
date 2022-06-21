@@ -3,10 +3,11 @@
         <h1 style="font-weight: lighter;">T4U</h1>
     </div>
     <div class="options">
-        <a routerLink="/cadastrar">Cadastrar ingresso</a>
+        <a routerLink="/cadastrar" *ngIf="!!profile_authorized">Cadastrar ingresso</a>
         <a routerLink="/listar">Listar ingressos</a>
     </div>
     <div class="pesquisaIngresso">
-        <input type="text" placeholder="Pesquisar por ingresso" ng-keyup="pesquisarIngresso()">
+        <label for="pesquisa_ingresso"></label>
+        <input type="text" name="pesquisa_ingresso" placeholder="Pesquisar por ingresso" (keyup)="pesquisarIngresso()" [(ngModel)]="pesquisa_ingresso">
     </div>
 </div>

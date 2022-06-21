@@ -11,11 +11,20 @@
               <label for="senha">Senha: </label>
               <input name="senha" type="password" [(ngModel)]="login.senha">
 
+              <br>
+              <label for="profile">Selecione seu perfil:</label>
+              <select name="profile"  [(ngModel)]="login.profile">
+                <option value="admin">Administrador</option>
+                <option value="user">Usuário</option>
+                <option value="manager">Gerente</option>
+                <option value="aux">Auxiliar</option>
+              </select>
+
           </form>
 
       </div>
       <div class="acoes">
           <button class="btnSalvarLogin, primary" (click)="salvarLogin()">Salvar</button>
-        </div>
+      </div>
   </form>
 </div>
