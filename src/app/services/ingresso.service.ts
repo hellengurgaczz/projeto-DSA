@@ -14,7 +14,7 @@ export class  IngressoService {
 
     URL = "http://localhost:3001/ingressos";
 
-    listarIngressos(id: String = '') : Observable<Ingresso[]>{
+    listarIngressos() : Observable<Ingresso[]>{
         return this.http.get<Ingresso[]>(this.URL);
     }
 
