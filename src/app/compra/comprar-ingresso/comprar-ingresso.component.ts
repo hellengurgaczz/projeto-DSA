@@ -17,6 +17,7 @@ export class ComprarIngressoComponent implements OnInit {
   ingresso: Ingresso = new Ingresso();
   compra: Compra = new Compra();
   login: Login = new Login();
+  public message: String = '';
 
   constructor(private ingressoService: IngressoService, private compraService: CompraService, private loginService: LoginService, private router: Router, private route: ActivatedRoute) {}
 
@@ -35,7 +36,9 @@ export class ComprarIngressoComponent implements OnInit {
     this.compraService.cadastrarCompra(this.compra).subscribe(() => {
         this.ingresso.numero_ingressos = this.ingresso.numero_ingressos - this.compra.quantidade_ingressos;
         this.ingressoService.atualizarIngresso(this.ingresso, this.ingresso.id).subscribe(() => {
-          this.router.navigate(['/listar']);
+          this.message = 'Ingressos comprados! Seu ticket logo será encaminhado ao seu e-mail!';
+          this.compra.cpf_comprador = '';
+          this.compra.quantidade_ingressos = 0;
         });
     });
   }

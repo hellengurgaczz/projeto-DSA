@@ -17,6 +17,7 @@
         </form>
 
     </div>
+    <span [(ngModel)]="message">{{message}}</span>
     <div class="acoes">
         <button class="btnSalvarCompra, primary" (click)="comprarIngresso()">Salvar</button>
         <button class="btnSalvarCompra, secundary" routerLink="/listar">Cancelar</button>
