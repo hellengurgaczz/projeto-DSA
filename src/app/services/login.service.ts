@@ -17,12 +17,12 @@ export class LoginService {
 
   URL = "http://localhost:3001/logins";
 
-    cadastrarLogin(login : Login) : Observable<any> {
-      return this.http.post(this.URL, login);
-    }
+  cadastrarLogin(login : Login) : Observable<any> {
+    return this.http.post(this.URL, login);
+  }
 
-    listarLogins() : Observable<Login[]>{
-      return this.http.get<Login[]>(this.URL);
-    }
+  listarLogins() : Observable<Login[]>{
+    return this.http.get<Login[]>(this.URL);
+  }
 
 }
